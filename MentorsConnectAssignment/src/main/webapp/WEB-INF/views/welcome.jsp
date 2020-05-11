@@ -9,7 +9,7 @@
 <body>
 <h2>welcome ${userName}</h2>
 
-	<a href="RegistrationForm"><input type="button" name="home" value="New User" /></a>
+	<a href="test"><input type="button" name="home" value="New User" /></a>
 	<a href="edit"><input type="button" name="home" value="Edit" /></a>
 	<a href="delete"><input type="button" name="home" value="Delete" /></a>
 </body>

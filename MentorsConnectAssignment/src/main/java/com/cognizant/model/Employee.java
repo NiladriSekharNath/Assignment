@@ -33,11 +33,11 @@ public class Employee implements Serializable {
 	@Column(name="em_sex")
 	private String gender;
 	
-	/*
+	
 	@ManyToOne
 	@JoinColumn(name="id",nullable=false)
 	private Address address;
-*/
+
 	public Employee() {
 		super();
 	}
@@ -82,7 +82,7 @@ public class Employee implements Serializable {
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
-/*
+
 	public Address getAddress() {
 		return address;
 	}
@@ -90,7 +90,7 @@ public class Employee implements Serializable {
 	public void setAddress(Address address) {
 		this.address = address;
 	}
-*/
+
 	public int getId() {
 		return id;
 	}
@@ -98,7 +98,7 @@ public class Employee implements Serializable {
 	@Override
 	public String toString() {
 		return "Employee [name=" + name + ", companyName=" + companyName + ", contactNo=" + contactNo + ", gender="
-				+ gender + ", address=]" ;//+ address + "]";
+				+ gender + ", address= ]";
 	}
 	
 	

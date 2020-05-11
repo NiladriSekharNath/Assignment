@@ -33,12 +33,6 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 
-	@Autowired
-	private EmployeeService employeeService;
-
-	@Autowired
-	private AddressService addressService;
-
 	@InitBinder
 	protected void initBinder(WebDataBinder binder) {
 		binder.addValidators(userValidator);
@@ -52,6 +46,7 @@ public class UserController {
 
 	/*
 	 */
+
 	@PostMapping("saveUser")
 	public String saveUser(@ModelAttribute("user") @Validated User user, BindingResult result, Model model) {
 
@@ -63,33 +58,12 @@ public class UserController {
 				return "login";// Redirecting to input page
 			} else {
 				model.addAttribute("userName", user.getUserName());
+
 				return "welcome";
 			}
-		}
-	}
 
-	@GetMapping()
-	public String getEmployeeForm(@ModelAttribute("employee") Model model) {
-		model.addAttribute("employee", new Employee());
-		Set<String> countryList = addressService.getAllCountries();
-		model.addAttribute("countryList", countryList);
-		for (String country : countryList) {
-			Set<String> stateList = addressService.getAllStatesByCountry(country);
-			model.addAttribute("stateList", stateList);
-			for (String state : stateList) {
-				Set<String> cityList = addressService.getAllCitiesByCountryAndState(country, state);
-				model.addAttribute("cityList", cityList);
-			}
 		}
 
-		return "RegistrationForm";
-
-	}
-
-	@PostMapping("saveEmployee")
-	public String saveNewEmployee(@ModelAttribute("employee") Employee employee) {
-		employeeService.addEmployee(employee);
-		return "welcome";
 	}
 
 }
