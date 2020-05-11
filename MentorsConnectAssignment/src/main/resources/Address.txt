@@ -1,0 +1,18 @@
+insert into user_db.address(country,state,city) values("USA","Alabama","Auburn");
+insert into user_db.address(country,state,city) values("USA","Alabama","Alexander City");
+insert into user_db.address(country,state,city) values("USA","Alabama","Fort Payne");
+insert into user_db.address(country,state,city) values("USA","California","Beverly");
+insert into user_db.address(country,state,city) values("USA","California","Claremont");
+insert into user_db.address(country,state,city) values("USA","California","Compton");
+insert into user_db.address(country,state,city) values("USA","California","Fontana");
+insert into user_db.address(country,state,city) values("France","Alsace","Colmar");
+insert into user_db.address(country,state,city) values("France","Alsace","Mulhouse");
+insert into user_db.address(country,state,city) values("France","Alsace","Strasbourg");
+insert into user_db.address(country,state,city) values("France","Burgundy","Auxerre");
+insert into user_db.address(country,state,city) values("France","Burgundy","Dijon");
+insert into user_db.address(country,state,city) values("France","Burgundy","Le Creusot");
+insert into user_db.address(country,state,city) values("India","Goa","Panaji");
+insert into user_db.address(country,state,city) values("India","Gujarat","Ahmedabad");
+insert into user_db.address(country,state,city) values("India","Gujarat","Dwarka");
+insert into user_db.address(country,state,city) values("India","West Bengal","Kolkata");
+insert into user_db.address(country,state,city) values("India","West Bengal","Howrah");
